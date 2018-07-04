@@ -4,13 +4,13 @@
 ##    lab6.ucf  15/7/2015
 ##
 ##    (c) J.M. Mendias
-##    Dise駉 Autom醫ico de Sistemas
-##    Facultad de Inform醫ica. Universidad Complutense de Madrid
+##    Dise帽o Autom谩tico de Sistemas
+##    Facultad de Inform谩tica. Universidad Complutense de Madrid
 ##
-##  Prop髎ito:
-##    Configuraci髇 del laboratorio 6
+##  Prop贸sito:
+##    Configuraci贸n del laboratorio 6
 ##
-##  Notas de dise駉:
+##  Notas de dise帽o:
 ##
 #####################################################################
 
@@ -27,13 +27,13 @@ TIMESPEC TSosc=PERIOD osc 20 ns HIGH 50%;
 NET rstPb_n LOC=E11;     # PB-izq
 
 #
-# Localizaci髇 del conector PS/2 de la XSA-3S Board
+# Localizaci贸n del conector PS/2 de la XSA-3S Board
 #
 NET ps2Clk  LOC=B16;   # CLK
 NET ps2Data LOC=E13;   # DATA
 
 #
-# Localizaci髇 del conector VGA de la XSA-3S Board
+# Localizaci贸n del conector VGA de la XSA-3S Board
 #
 NET hSync  LOC=B7;     # HSYNC
 NET vSync  LOC=D8;     # VSYNC
