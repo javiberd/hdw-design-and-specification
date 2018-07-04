@@ -1,0 +1,41 @@
+#####################################################################
+##
+##  Fichero:
+##    lab8multicycle.ucf  12/3/2017
+##
+##    (c) J.M. Mendias
+##    Diseño Automático de Sistemas
+##    Facultad de Informática. Universidad Complutense de Madrid
+##
+##  Propósito:
+##    Configuración del laboratorio 8 versión monociclo
+##
+##  Notas de diseño:
+##
+#####################################################################
+
+#
+# Reloj del sistema: CLKB a 50 MHz
+#
+NET osc LOC=P8;
+NET osc TNM_NET = osc;
+TIMESPEC TSosc=PERIOD osc 20 ns HIGH 50%;
+
+#
+# Reset del sistema: PB-4 de la XStend Board
+#
+NET rstPb_n LOC=M3;     # PB-4
+
+#
+# Localización de los push-buttons de la XSA-3S Board
+#
+NET filterOn_n LOC=A13;     # PB-der
+
+#
+# Localización del interfaz IIS de la XStend Board
+#
+NET mclk LOC=P11;     # MCLK 
+NET sclk LOC=T12;     # SCLK 
+NET lrck LOC=R12;     # LRCK 
+NET sdti LOC=M10;     # SDTI 
+NET sdto LOC=K5;      # SDTO 

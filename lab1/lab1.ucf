@@ -1,0 +1,82 @@
+#####################################################################
+##
+##  Fichero:
+##    lab1.ucf  14/7/2015
+##
+##    (c) J.M. Mendias
+##    Diseño Automático de Sistemas
+##    Facultad de Informática. Universidad Complutense de Madrid
+##
+##  Propósito:
+##    Configuración del laboratorio 1
+##
+##  Notas de diseño:
+##
+#####################################################################
+
+#
+# Localización de los push-buttons de la XSA-3S Board
+#
+NET pbs_n<1> LOC=E11;     # PB-izq
+NET pbs_n<0> LOC=A13;     # PB-der
+
+#
+# Localización del display 7-segmentos de la XSA-3S Board
+#
+NET upSegs<7> LOC=N11;     # LED-DP 
+NET upSegs<6> LOC=R10;     # LED-A 
+NET upSegs<5> LOC=P10;     # LED-B 
+NET upSegs<4> LOC=M11;     # LED-C 
+NET upSegs<3> LOC=M6;      # LED-D   
+NET upSegs<2> LOC=N6;      # LED-E 
+NET upSegs<1> LOC=T7;      # LED-F 
+NET upSegs<0> LOC=R7;      # LED-G 
+
+#
+# Localización del array de switches de la XStend Board
+#
+NET switches_n<7> LOC=P12;     # DIPSW-1
+NET switches_n<6> LOC=J1;      # DIPSW-2
+NET switches_n<5> LOC=H1;      # DIPSW-3
+NET switches_n<4> LOC=H3;      # DIPSW-4
+NET switches_n<3> LOC=G2;      # DIPSW-5
+NET switches_n<2> LOC=K15;     # DIPSW-6
+NET switches_n<1> LOC=K16;     # DIPSW-7
+NET switches_n<0> LOC=F15;     # DIPSW-8
+
+#
+# Localización de la barra de leds de la XStend Board
+#
+NET leds<0> LOC=L5;     # BARLED-1
+NET leds<1> LOC=N2;     # BARLED-2
+NET leds<2> LOC=M3;     # BARLED-3
+NET leds<3> LOC=N1;     # BARLED-4
+NET leds<4> LOC=T13;    # BARLED-5
+NET leds<5> LOC=L15;    # BARLED-6
+NET leds<6> LOC=J13;    # BARLED-7
+NET leds<7> LOC=H15;    # BARLED-8
+
+#
+# Localización del display 7-segmentos izquierdo de la XStend Board
+#
+NET leftSegs<7> LOC=N15;    # LED1-DP 
+NET leftSegs<6> LOC=H14;    # LED1-A 
+NET leftSegs<5> LOC=M4;     # LED1-B 
+NET leftSegs<4> LOC=P1;     # LED1-C 
+NET leftSegs<3> LOC=N3;     # LED1-D 
+NET leftSegs<2> LOC=M15;    # LED1-E 
+NET leftSegs<1> LOC=H13;    # LED1-F 
+NET leftSegs<0> LOC=G16;    # LED1-G
+
+#
+# Localización del display 7-segmentos derecho de la XStend Board
+#
+NET rightSegs<7> LOC=H4;     # LED2-DP 
+NET rightSegs<6> LOC=E2;     # LED2-A 
+NET rightSegs<5> LOC=E1;     # LED2-B 
+NET rightSegs<4> LOC=F3;     # LED2-C 
+NET rightSegs<3> LOC=F2;     # LED2-D   
+NET rightSegs<2> LOC=G4;     # LED2-E 
+NET rightSegs<1> LOC=G3;     # LED2-F 
+NET rightSegs<0> LOC=G1;     # LED2-G 
+

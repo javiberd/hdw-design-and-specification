@@ -1,0 +1,62 @@
+#####################################################################
+##
+##  Fichero:
+##    lab4.ucf  15/7/2015
+##
+##    (c) J.M. Mendias
+##    Diseño Automático de Sistemas
+##    Facultad de Informática. Universidad Complutense de Madrid
+##
+##  Propósito:
+##    Configuración del laboratorio 4
+##
+##  Notas de diseño:
+##
+#####################################################################
+
+#
+# Reloj del sistema: CLKB a 50 MHz
+#
+NET osc LOC=P8;
+NET osc TNM_NET = osc;
+TIMESPEC TSosc=PERIOD osc 20 ns HIGH 50%;
+
+#
+# Reset del sistema: PB-izq de la XSA-3S Board
+#
+NET rstPb_n LOC=E11;     # PB-izq
+
+#
+# Localización del conector PS/2 de la XSA-3S Board
+#
+NET ps2Clk  LOC=B16;   # CLK
+NET ps2Data LOC=E13;   # DATA
+
+#
+# Localización del speaker en un pin no usado
+#
+NET speaker LOC=L5;     # BARLED-1
+
+#
+# Localización del display 7-segmentos izquierdo de la XStend Board
+#
+NET leftSegs<7> LOC=N15;    # LED1-DP 
+NET leftSegs<6> LOC=H14;    # LED1-A 
+NET leftSegs<5> LOC=M4;     # LED1-B 
+NET leftSegs<4> LOC=P1;     # LED1-C 
+NET leftSegs<3> LOC=N3;     # LED1-D 
+NET leftSegs<2> LOC=M15;    # LED1-E 
+NET leftSegs<1> LOC=H13;    # LED1-F 
+NET leftSegs<0> LOC=G16;    # LED1-G
+
+#
+# Localización del display 7-segmentos derecho de la XStend Board
+#
+NET rightSegs<7> LOC=H4;     # LED2-DP 
+NET rightSegs<6> LOC=E2;     # LED2-A 
+NET rightSegs<5> LOC=E1;     # LED2-B 
+NET rightSegs<4> LOC=F3;     # LED2-C 
+NET rightSegs<3> LOC=F2;     # LED2-D   
+NET rightSegs<2> LOC=G4;     # LED2-E 
+NET rightSegs<1> LOC=G3;     # LED2-F 
+NET rightSegs<0> LOC=G1;     # LED2-G 

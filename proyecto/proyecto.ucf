@@ -1,0 +1,48 @@
+#####################################################################
+##
+##  Fichero:
+##    lab6.ucf  15/7/2015
+##
+##    (c) J.M. Mendias
+##    Diseño Automático de Sistemas
+##    Facultad de Informática. Universidad Complutense de Madrid
+##
+##  Propósito:
+##    Configuración del laboratorio 6
+##
+##  Notas de diseño:
+##
+#####################################################################
+
+#
+# Reloj del sistema: CLKB a 50 MHz
+#
+NET osc LOC=P8;
+NET osc TNM_NET = osc;
+TIMESPEC TSosc=PERIOD osc 20 ns HIGH 50%;
+
+#
+# Reset del sistema: PB-izq de la XSA-3S Board
+#
+NET rstPb_n LOC=E11;     # PB-izq
+
+#
+# Localización del conector PS/2 de la XSA-3S Board
+#
+NET ps2Clk  LOC=B16;   # CLK
+NET ps2Data LOC=E13;   # DATA
+
+#
+# Localización del conector VGA de la XSA-3S Board
+#
+NET hSync  LOC=B7;     # HSYNC
+NET vSync  LOC=D8;     # VSYNC
+net RGB<8> LOC=B1;     # RED2
+net RGB<7> LOC=D6;     # RED1
+net RGB<6> LOC=C8;     # RED0
+net RGB<5> LOC=C3;     # GREEN2
+net RGB<4> LOC=A5;     # GREEN1
+net RGB<3> LOC=A8;     # GREEN0
+net RGB<2> LOC=D5;     # BLUE2
+net RGB<1> LOC=E7;     # BLUE1
+net RGB<0> LOC=C9;     # BLUE0

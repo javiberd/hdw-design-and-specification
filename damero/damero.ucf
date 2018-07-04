@@ -1,0 +1,43 @@
+#####################################################################
+##
+##  Fichero:
+##    lab6.ucf  15/7/2015
+##
+##    (c) J.M. Mendias
+##    Diseño Automático de Sistemas
+##    Facultad de Informática. Universidad Complutense de Madrid
+##
+##  Propósito:
+##    Configuración del laboratorio 6
+##
+##  Notas de diseño:
+##
+#####################################################################
+
+#
+# Reloj del sistema: CLKB a 50 MHz
+#
+
+NET clk LOC=P8;
+NET clk TNM_NET = clk;
+TIMESPEC TSclk=PERIOD clk 20 ns HIGH 50%;
+
+#
+# Reset del sistema: PB1 de la XStend Board
+#
+NET rst_n LOC=H4;        # PB-1
+
+#
+# Localización del conector VGA de la XSA-3S Board
+#
+NET hSync LOC=B7;
+NET vSync LOC=D8;
+net RGB<8> loc=B1;
+net RGB<7> loc=D6;
+net RGB<6> loc=C8;
+net RGB<5> loc=C3;
+net RGB<4> loc=A5;
+net RGB<3> loc=A8;
+net RGB<2> loc=D5;
+net RGB<1> loc=E7;
+net RGB<0> loc=C9;
