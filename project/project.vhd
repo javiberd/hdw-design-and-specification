@@ -77,7 +77,7 @@ architecture Behavioral of proyecto is
     WIDTH : natural   -- anchura del numero aleatorio
   );
   port(
-    rst_n  : in  std_logic;   -- reset asíncrono del sistema (a baja)
+    rst_n  : in  std_logic;   -- reset asÃ­ncrono del sistema (a baja)
     clk    : in  std_logic;   -- reloj del sistema
     ce     : in  std_logic;   -- activa la generacion de numeros aleatorios (1 por ciclo de reloj)
     ld     : in  std_logic;   -- carga la semilla
