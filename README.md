@@ -1,5 +1,7 @@
 # Hardware design and specification with VHDL
-This repository contains all the work done throughout the extension of the course Diseño Automático de Sistemas taken at Universidad Complutense de Madrid and imparted by José M. Mendías. Ten assignments and my final project are included.
+This repository contains all the work done throughout the extension of the course ["Diseño Automático de Sistemas"](http://www.fdi.ucm.es/profesor/mendias/DAS/DAS.html) taken at Universidad Complutense de Madrid. This course was imparted by José M. Mendías. 
+
+During the course we learned and applied some of the methodologies of digital circuit design based on EDA tools. Ten assignments and my final project were developed, all of them in VHDL. All work was tested on a FPGA (Spartan 3 - XC3S1000).
 
 ## Explanation of each of the directories
 - /common: contains components used for a variety of assignments
